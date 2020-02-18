@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Validation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="formulaire">
+        <div class="user">
+            <label for="fnamee">Username:</label>
+            <input type="text" id="name"><br>
+        </div>
+        <div class="adress">
+            <label for="adrr">Adresse:</label>
+            <input type="text" id="adr"><br>
+        </div>
+        <div class="eadress">
+            <label for="eadr">E-mail Adresse:</label>
+            <input type="text" id="eadr"><br>
+        </div>
+        <div class="passw">
+            <label for="passs">password:</label>
+            <input type="text" id="pass"><br>
+        </div>
+        <div class="commm">
+            <label for="commmm">Comment:</label>
+            <input type="text" id="comm"><br>
+        </div>
+        <button id="button" value=''>Send</button>
+        <button id="button1"  onclick="reset()">Reset</button>
+    </div>
+
+
+    <script>
+        let button = document.getElementById('button')
+        console.log(button)
+        let name = document.getElementById('name')
+        console.log(name)
+        console.log("Hello")
+        let ad = document.getElementById('adr')
+        let email = document.getElementById('eadr')
+        let password = document.getElementById('pass')
+        let comme = document.getElementById('comm')
+        let numbers = /[0-9]/g
+        let upperCaseLetters = /[A-Z]/g
+        let lowerCaseLetters = /[a-z]/g
+        button.addEventListener("click", (e) => {
+            e.preventDefault()
+            popup1(name, ad, email, password, comme)
+            popup2(password)
+            popup3(email)
+            popup4(pass)
+
+        })
+
+
+        function popup1(name, ad, email, password, comme) {
+            console.log("name")
+
+            if (name.value === "" || ad.value === "" || email.value === "" || password.value === "" || comme.value === "") {
+                alert('champ vide');
+            }
+        }
+        function popup2(pass) {
+
+            if (pass.value.length < 8) {
+                alert('the password has less than 8 characters')
+
+
+            }
+        }
+        function popup3(email){
+            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))) {
+            alert('email incorrecte')
+            }
+        }
+        function popup4(pass){
+            if( !((pass.value.match(numbers)) && (pass.value.match(lowerCaseLetters)) && (pass.value.match(upperCaseLetters)))) {
+            alert("password invalid")}
+            
+
+        }
+function reset(){
+    name.value ="" 
+    ad.value ="" 
+    email.value ="" 
+    password.value ="" 
+    comme.value =""
+
+        }
+
+    </script>
+</body>
+</html>

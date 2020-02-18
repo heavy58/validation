@@ -1,0 +1,104 @@
+.formulaire{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+body{
+    background-color: #573544;
+}
+#button{
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: -26px;
+}
+#button1{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-left: -26px;
+}
+#comm{
+    width: 300px;
+    height:100px ;
+    border-radius: 8px;
+    background-color: #2F304A;
+}
+#name{
+    width: 300px;
+    height:30px ;
+    border-radius: 8px;
+    background-color: #2F304A;
+}
+#adr{
+    width: 300px;
+    height:30px ;
+    border-radius: 8px;
+    background-color: #2F304A;
+}
+#eadr{
+    width: 300px;
+    height:30px ;
+    border-radius: 8px;
+    background-color: #2F304A;
+}
+#pass{
+    width: 300px;
+    height:30px ;
+    border-radius: 8px;
+    background-color: #2F304A;
+}
+
+.user{
+    width: 80px;
+    margin-left: -250px;
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    Font-size: 13px;
+    Font-weight: 400;
+    Line-height:20px;
+}
+.adress{
+    width: 80px;
+    margin-top: 20px;
+    margin-left: -250px;
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    Font-size: 13px;
+    Font-weight: 400;
+    Line-height:20px;
+}
+.eadress{
+    width: 80px;
+    margin-top: 20px;
+    margin-left: -250px;
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    Font-size: 13px;
+    Font-weight: 400;
+    Line-height:20px;
+}
+.passw{
+    width: 80px;
+    margin-top: 20px;
+    margin-left: -250px;
+    color:white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    Font-size: 13px;
+    Font-weight: 400;
+    Line-height:20px;
+}
+.commm{
+    width: 80px;
+    margin-top: 20px;
+    margin-left: -250px;
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    Font-size: 13px;
+    Font-weight: 400;
+    Line-height:20px;
+}
